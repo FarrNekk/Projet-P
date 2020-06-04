@@ -1,0 +1,11 @@
+/* Ce fichier .css contient les règles générales pour le site web */
+
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+.inner-header{
+    width: 80%;
+    margin: auto;
+}

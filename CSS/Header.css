@@ -1,0 +1,26 @@
+/* Ce fichier .css contient toutes les règles css pour le header "l'en tête" du site */
+
+/* Ici on gère tout les paramètres touchant à la "nav" menu (la barre de navigation)*/
+.menu{
+    background: red;
+    width: 100%;
+    height: 60px;
+    line-height: 60px; /* Sert à centrer le texte dans le header */
+}
+
+/* Ici on gère tout les paramètres touchant au titre de la page */
+.logo{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+/* Ici on gère tout les paramètres touchant aux éléments à droite du header */
+.m-right{
+    float: right; /* Sert à positionner tout les éléments automatiquement à droite */
+}
+
+/* Ici on gère tout les paramètres touchant aux éléments à gauche du header */
+.m-left{
+    float: left; /* Sert à positionner tout les éléments automatiquement à gauche */
+}
