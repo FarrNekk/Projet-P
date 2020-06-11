@@ -2,7 +2,7 @@
 
 /* Ici on gère tout les paramètres touchant à la "nav" menu (la barre de navigation)*/
 .menu{
-    background: red;
+    background: #34495e;
     width: 100%;
     height: 60px;
     line-height: 60px; /* Sert à centrer le texte dans le header */
@@ -12,7 +12,11 @@
 .logo{
     margin: 0;
     padding: 0;
-    color: white;
+    color:#fff;
+    text-transform: uppercase;
+    font-family: 'Oswald';
+    font-weight: 900;
+    font-size: 30px;
 }
 
 /* Ici on gère tout les paramètres touchant aux éléments à droite du header */
@@ -23,4 +27,87 @@
 /* Ici on gère tout les paramètres touchant aux éléments à gauche du header */
 .m-left{
     float: left; /* Sert à positionner tout les éléments automatiquement à gauche */
+}
+
+/* Ici on stylise nos liens présent dans l'en-tête */
+.m-link{
+    text-decoration: none;
+    color:#BDBDBD;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 0;margin: 0 10px;
+    transition: all 0.3s ease-in-out;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 1px;
+}
+
+/* Ici on gère tout les paramètres touchant aux icones du header */
+.m-link i{
+    margin-right: 5px; 
+}
+
+/* Hover sert à définir ce qui ce passe lorsque l'on passe la souris sur le lien */
+.m-link:hover{
+    border-color: #BDBDBD;
+}
+
+.m-nav-toggle{
+    width: 40px;
+    height: 60px;
+
+    display: none;
+    align-items: center;
+    float: right;
+    cursor: pointer;
+}
+
+span.m-toggle-icon, span.m-toggle-icon:before, span.m-toggle-icon:after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+span.m-toggle-icon:before{top: 10px;}
+span.m-toggle-icon:after{top: -12px;}
+
+.m-right.is-open{
+    transform: translateX(0);
+}
+
+.m-nav-toggle.is-open span.m-toggle-icon{
+    background: transparent;
+}
+
+.m-nav-toggle.is-open span.m-toggle-icon:before, .m-nav-toggle.is-open span.m-toggle-icon:after{
+    transform-origin: center;
+    transform: rotate(45deg);
+    top: 0;
+}
+
+.m-nav-toggle.is-open span.m-toggle-icon:after{
+    transform: rotate(-45deg);
+}
+
+/* Ici on définit ce à quoi ressemblera la fenêtre lorsque qu'on la passera en demi écran */
+@media only screen and (max-width:958px){
+    .m-right{
+        position: absolute;
+        top: 60px;right: 0;
+        width: 200px;
+        height: 100%;
+        background: #34495e;
+        transform: translateX(100%);
+        transition: all 0.3s ease-in-out;
+    }
+    .m-nav-toggle{display: flex;}
+
+    .m-link{
+        display: block;
+        text-align: center;
+        padding: 0;margin: 0;
+    }
 }

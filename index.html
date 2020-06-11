@@ -6,13 +6,21 @@
 
         <title>Pokedex</title>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="CSS/Normalize.css">
         <link rel="stylesheet" href="CSS/Header.css">
+        <link rel="stylesheet" href="CSS/SlideShow.css">
+        
+        <script src="https://kit.fontawesome.com/09dd9691aa.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        
 
     </head>
 
     <body>
 
+        <!-- Début du header-->
         <header role="header">
 
             <nav class="menu" role="navigation"> <!-- Création de la barre de navigation du haut de page -->
@@ -23,15 +31,23 @@
                         </div>
     
                         <div class="m-right">
-                            <a href="Accueil">Accueil</a>
-                            <a href="Pokédex">Pokédex</a>
+                            <a href="Accueil" class="m-link"><i class="fas fa-home" aria-hidden="true"></i> Accueil</a>
+                            <a href="Pokédex" class="m-link"><i class="fas fa-mobile" aria-hidden="true"></i> Pokédex</a>
+                        </div>
+
+                        <div class="m-nav-toggle">
+                            <span class="m-toggle-icon"></span>
                         </div>
                 </div>
             </nav>
                 
-
+            
         </header>
+        
+        <!-- Début du Carousel-->
+        
 
+        <script src="JS/app.js" charset="utf-8"></script>
     </body>
 
 </html>

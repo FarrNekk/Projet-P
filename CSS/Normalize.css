@@ -1,11 +1,18 @@
 /* Ce fichier .css contient les règles générales pour le site web */
 
+/* Importation de différentes police d'écriture (pour en avoir d'autres je conseille le site "fonts.google.com" */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
 html, body{
     margin: 0;
     padding: 0;
+    font-family: 'Roboto';
+    overflow-x: hidden;
 }
 
-.inner-header{
+/*Caractéristiques du inner contenant les menus de la barre de navigation */
+.inner-header{ 
     width: 80%;
     margin: auto;
 }
